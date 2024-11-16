@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmasters small projects</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <canvas id=c></canvas>
+<!--
+ALGORITHM:
+
+structure:
+- gen( x,y,z ):
+	- create node at x,y,z // blue
+	- append some children to list:
+		- within a certain distance to parent
+		- outside a certain distance from any node
+		- within a global distance
+	- if no children
+		- don't append any
+		- set as end node // green-ish
+
+- gen( 0,0,0 ) // red
+- while list has items
+	- gen( position of first item )
+	- remove first item
+
+
+impulse behaviour:
+- pick( node ):
+	- if node is end node
+		- pick( original node )
+	- else
+		- pick( random node from node children )
+
+- pick( original node)
+
+-->
+<script src="script.js"></script>    
+</body>
+</html>
